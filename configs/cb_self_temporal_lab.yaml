@@ -1,0 +1,51 @@
+name: cb_self_temporal_lab
+out_root: runs
+seed: 0
+device: cuda:0
+freeze_base: true
+base_checkpoint: runs/cb_embed_ft2_s0/best.pt
+base:
+  arm: cb
+  seed: 0
+  encoder:
+    name: vit_base_patch14_dinov2.lvd142m
+    pretrained: true
+    checkpoint: null
+    token_pool: 2
+    trainable_blocks: 2
+  model:
+    d: 512
+    fusion_layers: 2
+    heads: 8
+    opaque_queries: 8
+    z_dim: 512
+    aux_lambda: 0.1
+    cb_detach: true
+    dropout: 0.1
+model:
+  heads: 8
+  dropout: 0.1
+  prior_mode: self
+  aux_lambda: 0.1
+data:
+  train_manifests: ["manifests/embed_temporal.jsonl"]
+  test_manifests: []
+  size: [1036, 644]
+  clahe: true
+  cache_dir: cache/prep
+train:
+  batch_size: 12
+  epochs: 15
+  lr: 0.0003
+  wd: 0.05
+  amp: true
+  workers: 8
+  log_every: 50
+  patience: 6
+  class_weight_power: 0.5
+  label_aware_sampler: true
+  labeled_frac: 0.5
+  epoch_samples: 3000
+  eval_labeled_only: true
+  eval_unlabeled: 200
+  select_metric: auroc

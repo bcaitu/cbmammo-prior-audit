@@ -1,0 +1,13 @@
+name: smoke_cb
+arm: cb
+seed: 0
+out_root: runs
+device: cpu
+encoder: {name: resnet18, pretrained: false, token_pool: 1}
+model: {d: 64, fusion_layers: 1, heads: 4, opaque_queries: 2, z_dim: 64, aux_lambda: 0.1, cb_detach: true}
+data:
+  train_manifests: [smoke/manifests/synthetic.jsonl]
+  test_manifests: [smoke/manifests/synthetic_ext.jsonl]
+  size: [128, 96]
+  clahe: true
+train: {epochs: 2, batch_size: 8, lr: 1.0e-3, amp: false, workers: 0, patience: 5, log_every: 20}

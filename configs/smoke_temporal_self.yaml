@@ -1,0 +1,20 @@
+# CPU smoke test on synthetic paired data (not results). Needs runs/smoke_cb_s0 from configs/smoke.yaml first.
+name: smoke_temporal_cb_self
+out_root: runs
+seed: 0
+device: cpu
+freeze_base: true
+base_checkpoint: runs/smoke_cb_s0/best.pt
+base:
+  arm: cb
+  seed: 0
+  encoder: {name: resnet18, pretrained: false, token_pool: 1}
+  model: {d: 64, fusion_layers: 1, heads: 4, opaque_queries: 2, z_dim: 64, aux_lambda: 0.1, cb_detach: true}
+model: {heads: 4, dropout: 0.1, prior_mode: self, aux_lambda: 0.1}
+data:
+  train_manifests: [smoke_temporal/manifests/embed_temporal_synthetic.jsonl]
+  test_manifests: []
+  size: [128, 96]
+  clahe: true
+  cache_dir: cache/smoke
+train: {batch_size: 8, epochs: 2, lr: 1.0e-3, wd: 0.05, amp: false, workers: 0, log_every: 5, patience: 5, class_weight_power: 0.5, label_aware_sampler: true, labeled_frac: 0.5, epoch_samples: 40, eval_labeled_only: true, eval_unlabeled: 10, select_metric: auroc}

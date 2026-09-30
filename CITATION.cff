@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the manuscript below."
+title: "cbmammo-prior-audit: code for an audit of interval-change supervision in the open EMBED mammography release"
+type: software
+license: Apache-2.0
+authors:
+  - family-names: Orazayev
+    given-names: Yerzhan
+    email: y.orazayev@astanait.edu.kz
+    affiliation: "Science and Innovation Center 'Artificial Intelligence', Astana IT University, Astana, Kazakhstan"
+  - family-names: Abdikenov
+    given-names: Beibit
+    email: beibit.abdikenov@astanait.edu.kz
+    affiliation: "Science and Innovation Center 'Artificial Intelligence', Astana IT University, Astana, Kazakhstan"
+preferred-citation:
+  type: article
+  title: "Do Temporal Models Read the Prior Exam? An Audit of Interval-Change Supervision in the Open EMBED Mammography Release"
+  authors:
+    - family-names: Orazayev
+      given-names: Yerzhan
+    - family-names: Abdikenov
+      given-names: Beibit
+  status: in-preparation
+  year: 2026

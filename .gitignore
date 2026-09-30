@@ -1,0 +1,16 @@
+# data, manifests (they carry EMBED patient/accession identifiers), caches, weights and run outputs are never committed
+/manifests/
+/cache/
+/runs/
+/logs/
+/smoke/
+/smoke_temporal/
+/cd_out/
+/prior_out/
+*.pt
+*.npz
+*.jsonl
+__pycache__/
+.pytest_cache/
+._*
+.DS_Store

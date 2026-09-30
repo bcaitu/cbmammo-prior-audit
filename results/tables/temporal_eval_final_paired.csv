@@ -1,0 +1,259 @@
+group,unit,task,a,b,delta,ci_lo,ci_hi,n_common
+heldout_pooled (split priors CONFOUND),mass,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.03985507246376807,-0.28261448417802937,0.1910047489646194,231
+heldout_pooled (split priors CONFOUND),mass,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.230877616747182,-0.4023262843211878,-0.06579103113210118,231
+heldout_pooled (split priors CONFOUND),mass,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.19102254428341392,-0.345663514753173,-0.037509067723921596,231
+heldout_pooled (split priors CONFOUND),mass,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.048309178743961345,-0.3859168699016063,0.3340540257081488,217
+heldout_pooled (split priors CONFOUND),mass,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.31980676328502416,-0.5545142180094786,-0.0642497930293729,217
+heldout_pooled (split priors CONFOUND),mass,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.2714975845410628,-0.4837250259705747,-0.010878646991442675,217
+heldout_pooled (split priors CONFOUND),mass,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.07573174197215116,-0.27441842097398744,0.11151076888072596,241
+heldout_pooled (split priors CONFOUND),mass,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.21327081557260585,-0.358867628018973,-0.06793151383044216,241
+heldout_pooled (split priors CONFOUND),mass,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.1375390736004547,-0.2666361819889254,-0.015559098639455886,241
+heldout_pooled (split priors CONFOUND),mass,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.05452322248281116,-0.11394935181796623,0.005145116021135222,448
+heldout_pooled (split priors CONFOUND),mass,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],0.0033676108004089267,-0.06607363284684363,0.07574352365275955,448
+heldout_pooled (split priors CONFOUND),mass,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.05789083328322009,0.012955039836008434,0.10451762317666342,448
+heldout_pooled (split priors CONFOUND),calc,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.3622291021671827,-0.5872304812766709,-0.1585107330542443,333
+heldout_pooled (split priors CONFOUND),calc,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.27801857585139317,-0.5030557965070701,-0.06572056525136753,333
+heldout_pooled (split priors CONFOUND),calc,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.08421052631578951,-0.13491754920556864,0.31464168361758715,333
+heldout_pooled (split priors CONFOUND),calc,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.20168067226890757,-0.44081787304293696,0.021406994224815405,337
+heldout_pooled (split priors CONFOUND),calc,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.23883237505528526,-0.4290263247802832,-0.07848304306135634,337
+heldout_pooled (split priors CONFOUND),calc,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.037151702786377694,-0.23810566866933694,0.17727884615384618,337
+heldout_pooled (split priors CONFOUND),calc,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.18890646468611805,-0.25373127140636426,-0.12381643828497142,594
+heldout_pooled (split priors CONFOUND),calc,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.16538696902169525,-0.23072653963404463,-0.09681375413505706,594
+heldout_pooled (split priors CONFOUND),calc,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.023519495664422796,-0.01667347842878753,0.06198266410899109,594
+heldout_pooled (split priors CONFOUND),asymmetry,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.016273584905660443,-0.1438282095403204,0.11595026034328915,213
+heldout_pooled (split priors CONFOUND),asymmetry,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.02853773584905661,-0.14906166679125865,0.08439246759377579,213
+heldout_pooled (split priors CONFOUND),asymmetry,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.012264150943396168,-0.110409740408963,0.09640931952185446,213
+heldout_pooled (split priors CONFOUND),asymmetry,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.1133223684210527,-0.22644708374727351,0.004874403742661425,236
+heldout_pooled (split priors CONFOUND),asymmetry,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.05945723684210524,-0.17011982236326337,0.050310700773750515,236
+heldout_pooled (split priors CONFOUND),asymmetry,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.053865131578947456,-0.008968578866909252,0.11259064210102795,236
+heldout_pooled (split priors CONFOUND),asymmetry,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.014631782945736416,-0.0780272446009699,0.11537458736088871,289
+heldout_pooled (split priors CONFOUND),asymmetry,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.018895348837209225,-0.09329088584398439,0.1269203555149449,289
+heldout_pooled (split priors CONFOUND),asymmetry,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.004263565891472809,-0.07569136149813521,0.09185255834212723,289
+heldout_pooled (split priors CONFOUND),asymmetry,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.06005522583010603,-0.10681915088719839,-0.0076894879696127565,893
+heldout_pooled (split priors CONFOUND),asymmetry,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.05649189944774169,-0.11497049133648345,0.004819196619177741,893
+heldout_pooled (split priors CONFOUND),asymmetry,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.00356332638236434,-0.032140035137554986,0.043569542358349464,893
+heldout_pooled (split priors CONFOUND),distortion,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.0957161981258367,-0.3979732061957976,0.19295555181607002,101
+heldout_pooled (split priors CONFOUND),distortion,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.2590361445783132,-0.47191546967624254,-0.07957778515818095,101
+heldout_pooled (split priors CONFOUND),distortion,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.1633199464524765,-0.3333463541666667,0.024716569767441788,101
+heldout_pooled (split priors CONFOUND),pooled,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.16973985134362496,-0.2773492587319587,-0.053308309209896994,724
+heldout_pooled (split priors CONFOUND),pooled,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.20852987421383645,-0.3179227093675492,-0.09666526122938385,724
+heldout_pooled (split priors CONFOUND),pooled,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.038790022870211494,-0.1021540410338584,0.01775233997750975,724
+heldout_pooled (split priors CONFOUND),pooled,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.2752120813222173,-0.36959395691437724,-0.18123358108075374,722
+heldout_pooled (split priors CONFOUND),pooled,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.24645312271464093,-0.33401848110741567,-0.1504545006949755,722
+heldout_pooled (split priors CONFOUND),pooled,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.02875895860757638,-0.014618914295415135,0.07097680025691076,722
+heldout_pooled (split priors CONFOUND),pooled,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.24107207402588016,-0.32387438122312917,-0.15464095610859627,810
+heldout_pooled (split priors CONFOUND),pooled,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.24482216438950333,-0.3266027214810024,-0.15588861222319866,810
+heldout_pooled (split priors CONFOUND),pooled,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.003750090363623171,-0.04446521210918063,0.03805999747528313,810
+heldout_pooled (split priors CONFOUND),pooled,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.141593073015559,-0.1754290364776199,-0.1060901490657071,1888
+heldout_pooled (split priors CONFOUND),pooled,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.12946924017310557,-0.16992488779321152,-0.08793285656655876,1888
+heldout_pooled (split priors CONFOUND),pooled,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.012123832842453441,-0.011725962523071832,0.03440392784397835,1888
+val,mass,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.09473684210526312,-0.3190969058211835,0.18855285472018085,67
+val,mass,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.06140350877192979,-0.2795072673878294,0.21935064935064924,67
+val,mass,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.033333333333333326,-0.13281609195402297,0.1768678410903291,67
+val,calc,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.10526315789473684,-0.38891666666666674,0.48053857906799086,26
+val,calc,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.1428571428571429,-0.22754329004329005,0.5318452380952381,26
+val,calc,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.03759398496240607,-0.3217685688405797,0.4545657467532468,26
+val,calc,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.10526315789473684,-0.3818560606060606,0.5102237048665619,26
+val,calc,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.13533834586466165,-0.23942028985507244,0.5126339285714284,26
+val,calc,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.03007518796992481,-0.3559259259259259,0.4857424812030075,26
+val,calc,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.1526980482204363,-0.3405075857855616,0.011185600114171574,93
+val,calc,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.2101033295063146,-0.41902260336210806,-0.030667657306825177,93
+val,calc,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.057405281285878296,-0.16883664108879626,0.03864941338854388,93
+val,asymmetry,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.1538461538461538,-0.4500595238095238,0.16169663669663667,23
+val,asymmetry,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.1307692307692308,-0.4444871794871795,0.2000595238095238,23
+val,asymmetry,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.023076923076922995,-0.21984126984126984,0.284044289044289,23
+val,asymmetry,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.3846153846153846,0.04405637254901962,0.7017700501253132,20
+val,asymmetry,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.24175824175824173,-0.0625400641025641,0.5385416666666666,20
+val,asymmetry,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.14285714285714285,-0.4375,0.11764705882352941,20
+val,asymmetry,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.06334841628959276,-0.3151057692307692,0.2089444444444444,30
+val,asymmetry,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.01809954751131221,-0.346061507936508,0.3333791208791208,30
+val,asymmetry,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.04524886877828055,-0.27175925925925926,0.36454385964912267,30
+val,asymmetry,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.22743055555555547,-0.3636363636363636,-0.08420663400926563,126
+val,asymmetry,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.22743055555555547,-0.3789048873831483,-0.06429951690821264,126
+val,asymmetry,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.0,-0.08277359693877544,0.09022819968314952,126
+val,pooled,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.0052631578947368585,-0.29365995115995125,0.2672097184292306,58
+val,pooled,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.04210526315789476,-0.22244269949066217,0.2881720430107527,58
+val,pooled,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.047368421052631615,-0.09408967391304347,0.18751717032967036,58
+val,pooled,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.039473684210526216,-0.27144841269841274,0.3463785790031813,46
+val,pooled,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.006578947368421129,-0.3464989810384547,0.32501893939393933,46
+val,pooled,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.046052631578947345,-0.19721428571428573,0.0854761904761905,46
+val,pooled,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.05545112781954886,-0.3797766348638441,0.23054627830675942,66
+val,pooled,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.04041353383458646,-0.3137041446765953,0.219892376142376,66
+val,pooled,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.015037593984962405,-0.0954305033416876,0.13003090659340652,66
+val,pooled,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.1755870392234028,-0.2800811618476573,-0.059864074321868736,297
+val,pooled,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.17447199265381086,-0.295430690860415,-0.04336072762894116,297
+val,pooled,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.0011150465695919376,-0.049207135286349485,0.05713957971961916,297
+test,mass,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.00666666666666671,-0.24809999999999993,0.2916666666666667,31
+test,mass,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.020000000000000018,-0.3307795698924731,0.39999999999999997,31
+test,mass,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.013333333333333308,-0.30780769230769234,0.3700897435897435,31
+test,mass,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.013333333333333364,-0.20132992007992015,0.2752499999999998,31
+test,mass,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.026666666666666672,-0.29288819875776395,0.38967532467532456,31
+test,mass,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.013333333333333308,-0.2800625,0.3333333333333333,31
+test,mass,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.07258064516129026,-0.17908657212885157,0.04036165546295566,111
+test,mass,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],0.015725806451612923,-0.13253382078683293,0.16359663865546223,111
+test,mass,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.08830645161290318,0.002729359405663015,0.1813719737765337,111
+test,calc,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.275,-0.7688341750841751,0.2619494047619047,21
+test,calc,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.1875,-0.626764025448236,0.2508653846153839,21
+test,calc,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.08750000000000002,-0.23633756038647338,0.48589705882352885,21
+test,calc,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.29189857761286336,-0.4697454108391608,-0.11357638888888891,98
+test,calc,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.32220160791589364,-0.47143054096638654,-0.16915316784608583,98
+test,calc,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.030303030303030276,-0.10788551902859808,0.05093482905982906,98
+test,asymmetry,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.0032206119162641045,-0.23761107891432434,0.26246975196612216,50
+test,asymmetry,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.019323671497584627,-0.26094504830917875,0.22582792207792196,50
+test,asymmetry,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.02254428341384873,-0.20226700111482718,0.1420110463540254,50
+test,asymmetry,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.035573122529644174,-0.27831192358366275,0.22490709773318457,34
+test,asymmetry,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.09881422924901195,-0.17619747899159668,0.40009615384615377,34
+test,asymmetry,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.13438735177865613,-0.015041666666666679,0.2804374918011282,34
+test,asymmetry,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.05949656750572074,-0.2741717089728453,0.13840560207336516,61
+test,asymmetry,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.04919908466819228,-0.19812554112554107,0.2821738253680177,61
+test,asymmetry,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.10869565217391303,-0.10112411125555724,0.32478679653679643,61
+test,asymmetry,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.2231850117096018,-0.3309163879598662,-0.11377262239527015,201
+test,asymmetry,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.20889929742388758,-0.32248160518377694,-0.09257496418516188,201
+test,asymmetry,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.014285714285714235,-0.05551302089951803,0.07646188421644842,201
+test,distortion,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.29064039408867,-0.6920220588235294,0.13545866935483863,36
+test,distortion,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.354679802955665,-0.6896756978653531,-0.024134164222874042,36
+test,distortion,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.064039408866995,-0.2889814814814815,0.15531609195402282,36
+test,pooled,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.021467603434816573,-0.1953301938557205,0.1729365120192418,103
+test,pooled,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.01717408274785326,-0.22020633380686735,0.1925080128205128,103
+test,pooled,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.004293520686963315,-0.09504026520541309,0.10386623266762295,103
+test,pooled,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.31284153005464477,-0.5242824147976693,-0.10291356184798818,73
+test,pooled,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.24316939890710387,-0.480080223880597,-0.0035156250000001237,73
+test,pooled,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.0696721311475409,-0.028275862068965527,0.19206959706959706,73
+test,pooled,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.1332726168791743,-0.30834361986912556,0.046884417189006745,115
+test,pooled,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.08044930176077719,-0.2750151821862348,0.11434265130425814,115
+test,pooled,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.05282331511839711,-0.04642878267629493,0.15071824255422683,115
+test,pooled,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.22403264387223853,-0.3030017371458674,-0.1408291473472442,424
+test,pooled,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.21468974250738704,-0.3038545628137119,-0.12356047055968039,424
+test,pooled,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.009342901364851497,-0.03341700346998096,0.054467691445429615,424
+GE,mass,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.007936507936507908,-0.3750690984117097,0.34842138664128186,185
+GE,mass,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.2919799498746867,-0.5183285848784264,-0.07297307161437602,185
+GE,mass,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.28404344193817876,-0.4725817828275126,-0.10720186781609205,185
+GE,mass,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.03216374269005845,-0.36717764778325124,0.3418113772455089,181
+GE,mass,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.33684210526315783,-0.5800223616485611,-0.0954633636587165,181
+GE,mass,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.3046783625730994,-0.5198036131127576,-0.043218624928530625,181
+GE,mass,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.08430799220272911,-0.3161834104568156,0.1571980462066669,195
+GE,mass,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.26364522417154,-0.4221430916732335,-0.09608280985319033,195
+GE,mass,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.1793372319688109,-0.3360249138399469,-0.029615368129277453,195
+GE,mass,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.04173913043478261,-0.11894190528412345,0.027080800847360916,310
+GE,mass,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],0.023723522853957624,-0.06743349737268038,0.1087085849436392,310
+GE,mass,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.06546265328874024,0.006533305188695075,0.12218988693059674,310
+GE,calc,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.3641755634638197,-0.5897986012019099,-0.10864873400340538,287
+GE,calc,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.3001186239620403,-0.5566375351335073,-0.014208760544179397,287
+GE,calc,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.06405693950177938,-0.29366246090801257,0.40023049645390046,287
+GE,calc,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.17516805061289048,-0.4854878048780488,0.075375484496124,290
+GE,calc,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.2775800711743773,-0.5107988013146872,-0.09475363265587557,290
+GE,calc,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.1024120205614868,-0.3737829025655672,0.15237790235594648,290
+GE,calc,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.12355276907001045,-0.19949022726332727,-0.04035391563337049,455
+GE,calc,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.09605015673981188,-0.17711310977767997,-0.009004794038225053,455
+GE,calc,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.027502612330198573,-0.01941049785993289,0.07650313365548868,455
+GE,asymmetry,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.06998556998557004,-0.16011171497584542,0.27853793032364466,153
+GE,asymmetry,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.050865800865800836,-0.15476648351648353,0.2511142942740516,153
+GE,asymmetry,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.019119769119769203,-0.18181323772151106,0.14855552738336714,153
+GE,asymmetry,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.11969696969696975,-0.24431094394994837,0.012042858361609489,197
+GE,asymmetry,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.0752913752913753,-0.19686545333782374,0.052341475927937725,197
+GE,asymmetry,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.04440559440559444,-0.02262600301914818,0.11327962268655836,197
+GE,asymmetry,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.06941508104298799,-0.03892251232778325,0.17579416475227358,218
+GE,asymmetry,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.03197674418604646,-0.09335048491379304,0.1565000092596022,218
+GE,asymmetry,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.037438336856941534,-0.12363757285360473,0.051410765254978744,218
+GE,asymmetry,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.026869266055045915,-0.08164448806785958,0.03450318534649994,618
+GE,asymmetry,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.035504587155963385,-0.10297047550880462,0.03500808767788494,618
+GE,asymmetry,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.00863532110091747,-0.060108811476315714,0.03544732565203772,618
+GE,distortion,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.037190082644628086,-0.37305583003952564,0.3641130897317298,55
+GE,distortion,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.2128099173553719,-0.46103058510638295,0.055612947658402176,55
+GE,distortion,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.25,-0.4481311371555274,0.043633540372670636,55
+GE,pooled,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.16296114117068378,-0.31942834993206537,-0.010288752511442024,573
+GE,pooled,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.19832759468765376,-0.34394515529308833,-0.045683336033959916,573
+GE,pooled,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.03536645351696999,-0.12676470762650643,0.06027132589632584,573
+GE,pooled,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.2696640565799444,-0.3698828621022414,-0.17685774051557104,609
+GE,pooled,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.24041424602172268,-0.3353559832918538,-0.1435806581406042,609
+GE,pooled,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.029249810558221734,-0.01869698197444263,0.08353282343155291,609
+GE,pooled,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.2458110814419226,-0.3457449093564739,-0.15510846066950787,647
+GE,pooled,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.24753004005340457,-0.34719640053026724,-0.16177939706703476,647
+GE,pooled,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.0017189586114819688,-0.04788407286863532,0.045191628422604775,647
+GE,pooled,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.10912438756721266,-0.15093913058793174,-0.06737869571017999,1321
+GE,pooled,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.10124713585791101,-0.1506092672219607,-0.05280555432410087,1321
+GE,pooled,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.007877251709301647,-0.023168825118558847,0.036728777549441254,1321
+fuji,mass,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.05555555555555558,-0.22736013986013975,0.10632102272727262,27
+fuji,mass,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.01666666666666672,-0.3000443786982248,0.2924494949494948,27
+fuji,mass,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.03888888888888886,-0.21794871794871795,0.29632478632478626,27
+fuji,calc,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.36923076923076925,-0.6062000000000001,-0.1294580602260853,41
+fuji,calc,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.40512820512820513,-0.6667279411764705,-0.11942355889724313,41
+fuji,calc,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.03589743589743588,-0.1785714285714285,0.09457436974789912,41
+fuji,asymmetry,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.19999999999999998,-0.6666666666666667,0.1716666666666659,10
+fuji,asymmetry,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.24000000000000002,-0.625,0.0,10
+fuji,asymmetry,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.040000000000000036,-0.430952380952381,0.44527777777777766,10
+fuji,asymmetry,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.4,-1.0,0.375,10
+fuji,asymmetry,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.6,-1.0,0.0,10
+fuji,asymmetry,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.19999999999999996,-0.7142857142857142,0.30000000000000004,10
+fuji,asymmetry,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.0234375,-0.2804596336499321,0.28704059829059825,74
+fuji,asymmetry,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],0.06406250000000002,-0.2555662321746881,0.3444771485345255,74
+fuji,asymmetry,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.04062500000000002,-0.123125,0.2291752049180328,74
+fuji,pooled,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.21250000000000002,-0.6294887955182072,0.2016871614697701,48
+fuji,pooled,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.396875,-0.8074216524216524,0.02807412790697662,48
+fuji,pooled,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.18437499999999996,-0.39290178571428575,0.05203703703703683,48
+fuji,pooled,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.24687499999999996,-0.8013157894736842,0.27621506211180125,48
+fuji,pooled,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.41874999999999996,-0.8821086711711712,0.05639136904761894,48
+fuji,pooled,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.171875,-0.35360497692814763,0.046595171520152766,48
+fuji,pooled,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.12346491228070172,-0.2665091470146617,0.023610535790415336,143
+fuji,pooled,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.16030701754385962,-0.3364206798210021,0.006233858679985552,143
+fuji,pooled,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.0368421052631579,-0.13302708310515618,0.050239766081871404,143
+"STRATIFIED (test, GE, fuji)",mass,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.00888717156105101,-0.3524835471444452,0.35149508129583135,231
+"STRATIFIED (test, GE, fuji)",mass,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.2724111282843895,-0.480401214748252,-0.0504346370731911,231
+"STRATIFIED (test, GE, fuji)",mass,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.2635239567233385,-0.44993535585802413,-0.09290055301682852,231
+"STRATIFIED (test, GE, fuji)",mass,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.03216374269005845,-0.37848471495440345,0.34639196862212007,181
+"STRATIFIED (test, GE, fuji)",mass,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.33684210526315783,-0.591136430288588,-0.07459228592754595,181
+"STRATIFIED (test, GE, fuji)",mass,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.3046783625730994,-0.5187475688092685,-0.06085171378023175,181
+"STRATIFIED (test, GE, fuji)",mass,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.08143322475570036,-0.3167333619932218,0.13374930203894822,241
+"STRATIFIED (test, GE, fuji)",mass,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.25290832945556074,-0.4139731161872999,-0.09959977547954074,241
+"STRATIFIED (test, GE, fuji)",mass,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.17147510469986038,-0.30901896038586585,-0.022831256297963235,241
+"STRATIFIED (test, GE, fuji)",mass,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.04488738289814642,-0.11324392795609721,0.02567955610803113,448
+"STRATIFIED (test, GE, fuji)",mass,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],0.02264301375323885,-0.05600653317151754,0.1034687244407304,448
+"STRATIFIED (test, GE, fuji)",mass,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.06753039665138527,0.01515158573343489,0.12233449163622559,448
+"STRATIFIED (test, GE, fuji)",calc,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.36514285714285716,-0.6182055689731872,-0.11163053178188276,307
+"STRATIFIED (test, GE, fuji)",calc,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.29885714285714277,-0.5584428094095352,-0.04169965226655488,307
+"STRATIFIED (test, GE, fuji)",calc,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.06628571428571439,-0.27088721945383587,0.3800234077556718,307
+"STRATIFIED (test, GE, fuji)",calc,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.0454016298020955,-0.36090088054835195,0.3404296110033823,301
+"STRATIFIED (test, GE, fuji)",calc,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.1071012805587892,-0.32193055232182133,0.07812834642089846,301
+"STRATIFIED (test, GE, fuji)",calc,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.1525029103608847,-0.41922948501349105,0.07619142671062924,301
+"STRATIFIED (test, GE, fuji)",calc,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.1782292065925642,-0.4466604441696323,0.08325317695283921,311
+"STRATIFIED (test, GE, fuji)",calc,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.2748179379072442,-0.4920472132910627,-0.09502463932212522,311
+"STRATIFIED (test, GE, fuji)",calc,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.09658873131467999,-0.3929974576669631,0.12705669031009184,311
+"STRATIFIED (test, GE, fuji)",calc,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.13093447259161217,-0.20124848722065108,-0.05637599093688207,594
+"STRATIFIED (test, GE, fuji)",calc,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.1058025954229096,-0.1776981762619485,-0.025915943130637747,594
+"STRATIFIED (test, GE, fuji)",calc,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.025131877168702577,-0.016473690356794246,0.07065767004844756,594
+"STRATIFIED (test, GE, fuji)",asymmetry,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.05588063194850801,-0.13582587049874043,0.2378071343944079,213
+"STRATIFIED (test, GE, fuji)",asymmetry,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.035985956699824406,-0.13561064049006286,0.21598632762998285,213
+"STRATIFIED (test, GE, fuji)",asymmetry,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.019894675248683602,-0.17206133274880525,0.1107486505740632,213
+"STRATIFIED (test, GE, fuji)",asymmetry,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.11728744480923808,-0.2507218983563145,0.007903962678023183,231
+"STRATIFIED (test, GE, fuji)",asymmetry,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.07030453979395451,-0.1838443392789545,0.046582658008312273,231
+"STRATIFIED (test, GE, fuji)",asymmetry,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.04698290501528357,-0.015932043203754128,0.11122554369839488,231
+"STRATIFIED (test, GE, fuji)",asymmetry,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.0592604685331809,-0.04594542335927466,0.15745671122114277,289
+"STRATIFIED (test, GE, fuji)",asymmetry,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],0.03191576197861401,-0.0816434231091236,0.14485786037664303,289
+"STRATIFIED (test, GE, fuji)",asymmetry,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.02734470655456689,-0.10867086930326844,0.0580043963626143,289
+"STRATIFIED (test, GE, fuji)",asymmetry,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.043930275990869405,-0.09575435290750918,0.004764855046313056,893
+"STRATIFIED (test, GE, fuji)",asymmetry,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.050207511931936066,-0.11663823637463226,0.010925944295123623,893
+"STRATIFIED (test, GE, fuji)",asymmetry,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.006277235941066661,-0.04955899602908978,0.03802423345569784,893
+"STRATIFIED (test, GE, fuji)",distortion,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],0.2,-0.13333333333333336,0.6666666666666666,13
+"STRATIFIED (test, GE, fuji)",distortion,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.3333333333333333,-0.852037037037037,0.6666666666666666,13
+"STRATIFIED (test, GE, fuji)",distortion,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.5333333333333333,-0.8666666666666667,0.0,13
+"STRATIFIED (test, GE, fuji)",distortion,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.7777777777777777,-0.8888888888888888,0.0,8
+"STRATIFIED (test, GE, fuji)",distortion,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.8888888888888888,-1.0,0.0,8
+"STRATIFIED (test, GE, fuji)",distortion,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.11111111111111116,-0.11111111111111116,0.0,8
+"STRATIFIED (test, GE, fuji)",distortion,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.41666666666666663,-0.75,0.125,18
+"STRATIFIED (test, GE, fuji)",distortion,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.5416666666666666,-0.875,0.0,18
+"STRATIFIED (test, GE, fuji)",distortion,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.125,-0.20833333333333337,0.0,18
+"STRATIFIED (test, GE, fuji)",distortion,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.059679767103347936,-0.36216801798958304,0.20175973587687718,91
+"STRATIFIED (test, GE, fuji)",distortion,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.2547307132459971,-0.46291108782074064,-0.032717502547429854,91
+"STRATIFIED (test, GE, fuji)",distortion,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.19505094614264917,-0.35133551673944685,0.030490816338381452,91
+"STRATIFIED (test, GE, fuji)",pooled,changed_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.1480268826469069,-0.2897005166103901,-0.004607352019634517,724
+"STRATIFIED (test, GE, fuji)",pooled,changed_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.18107013613648115,-0.3148361665293771,-0.03938341311025815,724
+"STRATIFIED (test, GE, fuji)",pooled,changed_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],-0.033043253489574265,-0.11550789057989257,0.0530023501004566,724
+"STRATIFIED (test, GE, fuji)",pooled,resolved_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.27044789444968015,-0.3654787942055256,-0.16845582799483122,682
+"STRATIFIED (test, GE, fuji)",pooled,resolved_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.24046426268538273,-0.3409847826827217,-0.12936832361324704,682
+"STRATIFIED (test, GE, fuji)",pooled,resolved_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.029983631764297414,-0.016880609578951242,0.08195978527447799,682
+"STRATIFIED (test, GE, fuji)",pooled,anychange_vs_stable,concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.23998174205936978,-0.33558371499511497,-0.15107043869688616,810
+"STRATIFIED (test, GE, fuji)",pooled,anychange_vs_stable,concept_diff (label-free),opaque learned [3-seed ens],-0.23972990839550473,-0.33809795241207435,-0.15765832655682283,810
+"STRATIFIED (test, GE, fuji)",pooled,anychange_vs_stable,CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.0002518336638650531,-0.042881676089801306,0.044599264619429466,810
+"STRATIFIED (test, GE, fuji)",pooled,new_vs_notnew(silver),concept_diff (label-free),CB learned (concept heads) [3-seed ens],-0.11784641324663159,-0.1572422924786066,-0.07788108816338601,1888
+"STRATIFIED (test, GE, fuji)",pooled,new_vs_notnew(silver),concept_diff (label-free),opaque learned [3-seed ens],-0.11028838249732476,-0.15530312177980665,-0.06361309325940119,1888
+"STRATIFIED (test, GE, fuji)",pooled,new_vs_notnew(silver),CB learned (concept heads) [3-seed ens],opaque learned [3-seed ens],0.007558030749306832,-0.020267366987457246,0.03757622332855061,1888

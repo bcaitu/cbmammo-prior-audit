@@ -1,0 +1,7 @@
+table,key,pairs,labelled_pairs
+split,train,39717,2367
+split,validation,5592,297
+split,hologic_test,8038,424
+split,ge_holdout,14967,1321
+split,fuji_holdout,1751,143
+split,total,70065,4552

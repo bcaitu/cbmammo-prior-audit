@@ -1,0 +1,60 @@
+{
+ "config": {
+  "name": "opq_embed_ft2",
+  "arm": "opaque",
+  "seed": 0,
+  "out_root": "runs",
+  "encoder": {
+   "name": "vit_base_patch14_dinov2.lvd142m",
+   "pretrained": true,
+   "checkpoint": null,
+   "token_pool": 2,
+   "trainable_blocks": 2
+  },
+  "model": {
+   "d": 512,
+   "fusion_layers": 2,
+   "heads": 8,
+   "opaque_queries": 8,
+   "z_dim": 512,
+   "aux_lambda": 0.1,
+   "cb_detach": true,
+   "dropout": 0.1
+  },
+  "data": {
+   "train_manifests": [
+    "manifests/cbis_ddsm.jsonl",
+    "manifests/vindr.jsonl",
+    "manifests/embed.jsonl"
+   ],
+   "test_manifests": [
+    "manifests/cmmd.jsonl",
+    "manifests/cdd_cesm.jsonl",
+    "manifests/inbreast.jsonl"
+   ],
+   "size": [
+    1036,
+    644
+   ],
+   "clahe": true,
+   "cache_dir": "cache/prep",
+   "dump_train": true
+  },
+  "train": {
+   "epochs": 20,
+   "batch_size": 16,
+   "lr": 0.0003,
+   "wd": 0.05,
+   "amp": true,
+   "workers": 16,
+   "patience": 4,
+   "class_weight_power": 0.5,
+   "log_every": 100,
+   "embed_neg_ratio": 1.0,
+   "dataset_balanced_val": true,
+   "enc_lr_mult": 0.1
+  }
+ },
+ "seed": 2,
+ "best_val": 0.5182204113839598
+}
