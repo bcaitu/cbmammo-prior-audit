@@ -16,7 +16,7 @@ Only 1.5 % of training pairs carry a change label (3 resolved and 24 changed exa
 |---|---|
 | `cbmammo/` | static concept-bottleneck / opaque models and training (`model.py`, `train_stage1.py`, ...), dataset builders (`cbmammo/prepare`, including `embed_temporal`, the current--prior pair builder with the finding-linkage rule), and the temporal extension: `temporal_concepts.py`, `temporal_data.py`, `temporal_model.py` (cross-attention block, `prior_mode: self` current-only control, loss), `train_stage1_temporal.py` |
 | `configs/` | `cb_embed_ft2.yaml`, `opq_embed_ft2.yaml` (frozen static bases), `cb_temporal_lab.yaml`, `opq_temporal_lab.yaml` (temporal heads), `cb_self_temporal_lab.yaml`, `opq_self_temporal_lab.yaml` (current-only controls), `smoke*.yaml` (CPU smoke tests) |
-| `audit/` | `label_density.py`, `concept_diff_infer.py`, `concept_diff_analysis.py`, `temporal_eval.py`, `prior_shuffle_eval.py`, `prior_shuffle_analysis.py` |
+| `audit/` | `label_density.py`, `concept_diff_infer.py`, `concept_diff_analysis.py`, `registration_baseline.py`, `registration_analysis.py`, `temporal_eval.py`, `prior_shuffle_eval.py`, `prior_shuffle_analysis.py` |
 | `results/tables/` | aggregate result tables behind every number in the manuscript (no patient-level data) |
 | `results/runs/` | `run.json` (exact configuration and best validation score) and `train_log.json` for the 6 frozen bases and 12 temporal runs |
 | `scripts/`, `tests/` | synthetic-data generators for smoke tests; unit tests (including the test that the current-only control is independent of the prior) |
@@ -59,6 +59,8 @@ done
 # 4. label-free concept differencing, evaluation, prior-usage controls (bootstrap B = 1000 as reported)
 python audit/concept_diff_infer.py --runs cb_embed_ft2_s0 cb_embed_ft2_s1 cb_embed_ft2_s2 --out cd_out
 python audit/concept_diff_analysis.py cd_out results/tables/concept_diff_results.csv 1000
+python audit/registration_baseline.py --out reg_out --cache cache/prep      # CPU only, ~10 min; registration + image-subtraction baseline and its two controls
+python audit/registration_analysis.py reg_out results/tables/registration_baseline_results.csv 1000
 python audit/temporal_eval.py cd_out runs results/tables/temporal_eval_final.csv 1000     # also writes temporal_eval_final_paired.csv
 python audit/prior_shuffle_eval.py prior_out cb_temporal_lab_s0 cb_temporal_lab_s1 cb_temporal_lab_s2 opq_temporal_lab_s0 opq_temporal_lab_s1 opq_temporal_lab_s2
 python audit/prior_shuffle_analysis.py prior_out cd_out results/tables/prior_shuffle_final.csv 1000
@@ -70,9 +72,10 @@ python audit/prior_shuffle_analysis.py prior_out cd_out results/tables/prior_shu
 |---|---|
 | 1, label yield | `label_yield.csv`, `label_yield_train_descriptors.csv` (transcribed from the output of `audit/label_density.py`) |
 | 2, concept differencing | `concept_diff_results.csv` |
-| 3, learned heads per split | `temporal_eval_final.csv` |
-| 4, prior-using minus current-only, CB minus opaque | `temporal_eval_final_paired.csv` |
-| 5, true / different-patient / identity prior | `prior_shuffle_final.csv` |
+| 3, registration / difference-image baseline | `registration_baseline_results.csv` (all statistics, splits and descriptors), `registration_baseline_results_controls.csv` (different-patient prior and synthetic-lesion controls), `registration_baseline_results_primary.json` (statistic chosen from the synthetic-lesion control) |
+| 4, learned heads per split | `temporal_eval_final.csv` |
+| 5, prior-using minus current-only, CB minus opaque | `temporal_eval_final_paired.csv` |
+| 6, true / different-patient / identity prior | `prior_shuffle_final.csv` |
 
 AUROCs are split-stratified averages (weights proportional to n_pos x n_neg) or per-split values; intervals are 95 % patient-cluster bootstrap intervals; paired differences share resamples.
 
@@ -94,6 +97,10 @@ The smoke test checks that the pipeline runs; its numbers mean nothing.
 * `configs/cb_embed_ft2.yaml` and `opq_embed_ft2.yaml` were reconstructed from the saved `run.json` of the corresponding runs; seeds of one arm differ only in `seed` and the dataloader worker count.
 * `cbmammo/prepare/builders.py` is the file used for the runs with the builder for a private clinic dataset removed (not used here). The `cbmammo/` package is shared with the repository of the companion site-shift study (`bcaitu/cbmammo-site-shift`).
 * The original full-manifest runs (before the label-aware sampler) collapsed to constant predictions and are not part of the reported results; their configs are omitted.
+
+* The registration baseline was added last. Its design choices (image size, smoothing, the three tail statistics, the control amplitudes and lesion size) were fixed on an 80-pair smoke run using the failure diagnostics and the synthetic-lesion control; the AUROCs of that smoke run against the labels were printed but not used to choose anything. The primary statistic is the one with the highest synthetic-lesion AUROC at amplitude 0.4, computed by `registration_analysis.py`.
+* The registration baseline is affine and detects only conspicuous synthetic lesions (AUROC about 0.65 at amplitude 0.4 and 0.78 at 0.6), so its null result does not exclude subtle interval change.
+* The diagnostic montage of registered image pairs written by `registration_baseline.py` contains EMBED image content and must not be committed or shared.
 
 ## Licence and citation
 

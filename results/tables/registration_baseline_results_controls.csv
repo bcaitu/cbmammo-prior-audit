@@ -1,0 +1,13 @@
+control,score,n_pairs,auroc,ci_lo,ci_hi
+different-patient prior vs true prior (abs score),abs_q99,298,0.8681928741948561,0.8378096707355525,0.8960421264807892
+"synthetic lesion, amplitude 0.20 (pos score) vs no lesion",pos_q99,300,0.5227,0.5114011111111112,0.5342802777777778
+"synthetic lesion, amplitude 0.40 (pos score) vs no lesion",pos_q99,300,0.6222,0.6012863888888889,0.6460016666666667
+"synthetic lesion, amplitude 0.60 (pos score) vs no lesion",pos_q99,300,0.7430333333333333,0.7166663888888889,0.77108
+different-patient prior vs true prior (abs score),abs_q999,298,0.8180937795594793,0.7853672131885951,0.8505816179451376
+"synthetic lesion, amplitude 0.20 (pos score) vs no lesion",pos_q999,300,0.5135444444444445,0.500786111111111,0.5272524999999999
+"synthetic lesion, amplitude 0.40 (pos score) vs no lesion",pos_q999,300,0.6154,0.5934552777777778,0.6395475
+"synthetic lesion, amplitude 0.60 (pos score) vs no lesion",pos_q999,300,0.7409,0.7149219444444445,0.7676261111111111
+different-patient prior vs true prior (abs score),abs_mf,298,0.8252218368541958,0.7913218999144183,0.8583521012567001
+"synthetic lesion, amplitude 0.20 (pos score) vs no lesion",pos_mf,300,0.5095555555555555,0.49626444444444445,0.5217333333333334
+"synthetic lesion, amplitude 0.40 (pos score) vs no lesion",pos_mf,300,0.6451222222222223,0.621146388888889,0.6706833333333334
+"synthetic lesion, amplitude 0.60 (pos score) vs no lesion",pos_mf,300,0.7762666666666667,0.7502772222222223,0.804445
