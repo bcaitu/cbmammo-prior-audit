@@ -2,9 +2,9 @@
 
 Code and aggregate results for
 
-> Orazayev Y., Abdikenov B. **Do Temporal Models Read the Prior Exam? An Audit of Interval-Change Supervision in the Open EMBED Mammography Release.** Manuscript in preparation. Astana IT University, Astana, Kazakhstan.
+> Orazayev Y., Abdikenov B. **Do Temporal Models Read the Prior Exam? An Audit of Interval-Change Supervision in the Open EMBED Mammography Release.** Manuscript under review. Astana IT University, Astana, Kazakhstan.
 
-The study asks whether models that read a current--prior mammogram pair use the prior, using the radiologist `changed` codes of the open 20 % release of the Emory Breast Imaging Dataset (EMBED). It links 70,065 current--prior breast pairs (4,552 with a change code or a silver new-finding label), compares label-free concept differencing with learned cross-attention heads (concept-bottleneck and opaque, three seeds each), and adds prior-usage controls: a different-patient prior, an identity prior, and a current-only retrain with the same parameter count.
+The study asks whether models that read a current--prior mammogram pair use the prior, using the radiologist `changed` codes of the open 20 % release of the Emory Breast Imaging Dataset (EMBED). It pairs each breast with the same breast in the patient's preceding in-sample exam (70,065 current--prior breast pairs, 4,552 of them with a change code or a silver new-finding label), compares label-free concept differencing with learned cross-attention heads (concept-bottleneck and opaque, three seeds each), and adds prior-usage controls: a different-patient prior, an identity prior, and a current-only retrain with the same parameter count.
 
 ## Findings in one paragraph
 
@@ -14,7 +14,7 @@ Only 1.5 % of training pairs carry a change label (3 resolved and 24 changed exa
 
 | Path | Content |
 |---|---|
-| `cbmammo/` | static concept-bottleneck / opaque models and training (`model.py`, `train_stage1.py`, ...), dataset builders (`cbmammo/prepare`, including `embed_temporal`, the current--prior pair builder with the finding-linkage rule), and the temporal extension: `temporal_concepts.py`, `temporal_data.py`, `temporal_model.py` (cross-attention block, `prior_mode: self` current-only control, loss), `train_stage1_temporal.py` |
+| `cbmammo/` | static concept-bottleneck / opaque models and training (`model.py`, `train_stage1.py`, ...), dataset builders (`cbmammo/prepare`, including `embed_temporal`, the current--prior pair builder; see "How the labels are built" below for what the finding-linkage rule is used for), and the temporal extension: `temporal_concepts.py`, `temporal_data.py`, `temporal_model.py` (cross-attention block, `prior_mode: self` current-only control, loss), `train_stage1_temporal.py` |
 | `configs/` | `cb_embed_ft2.yaml`, `opq_embed_ft2.yaml` (frozen static bases), `cb_temporal_lab.yaml`, `opq_temporal_lab.yaml` (temporal heads), `cb_self_temporal_lab.yaml`, `opq_self_temporal_lab.yaml` (current-only controls), `smoke*.yaml` (CPU smoke tests) |
 | `audit/` | `label_density.py`, `concept_diff_infer.py`, `concept_diff_analysis.py`, `registration_baseline.py`, `registration_analysis.py`, `temporal_eval.py`, `prior_shuffle_eval.py`, `prior_shuffle_analysis.py` |
 | `results/tables/` | aggregate result tables behind every number in the manuscript (no patient-level data) |
@@ -22,6 +22,15 @@ Only 1.5 % of training pairs carry a change label (3 resolved and 24 changed exa
 | `scripts/`, `tests/` | synthetic-data generators for smoke tests; unit tests (including the test that the current-only control is independent of the prior) |
 
 Not included: EMBED images and tables, the pair manifest `manifests/embed_temporal.jsonl` (it carries patient and accession identifiers of the EMBED release), model weights, image caches.
+
+## How the labels are built
+
+* **Pairs.** A pair is a breast of a current exam and the same breast in the patient's immediately preceding exam in the open release (`embed_temporal` in `cbmammo/prepare/builders.py`). Breasts without an in-sample prior or without an image pair are dropped.
+* **Coded change.** The change label of a finding row is taken directly from the radiologist's `changed` code on the current finding (`_decode_changed`). It does not depend on any matching of findings.
+* **Finding-linkage cascade (`_link_prior`).** For a current finding it looks for a single candidate in the prior exam: side, location and kind (mass or calcification), then side and kind, then side alone; several candidates count as ambiguous. In the manifest builder it is applied to uncoded findings only. A finding with no code is tagged a `strong` new candidate when the prior exam has no finding at all on that side, and `weak` otherwise; `weak` candidates get weight 0 in the loss and are not evaluated (`encode_new` in `cbmammo/temporal_concepts.py`).
+* **Silver new-finding label.** Class "not new" = the finding carries any explicit change code (including "no significant change"). Class "new" = an uncoded finding with a `strong` tag. The two classes therefore differ both in whether a prior finding exists and in whether a code was recorded.
+* **The 90.5 % figure.** The share of directional-code rows with an in-sample prior that resolve to a single prior finding (reported in the manuscript) comes from a separate check that is not part of this repository.
+* **Vendor hold-outs.** `test_embed_ge` and `test_embed_fuji` hold every record of each patient who has at least one GE or Fujifilm 2D exam (see the `embed()` docstring), so a record in these splits can still pair two Hologic exams.
 
 ## Data
 
