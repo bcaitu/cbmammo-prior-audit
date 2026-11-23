@@ -49,7 +49,7 @@ python -m cbmammo.prepare vindr          --root <VinDr-Mammo root> --out manifes
 python -m cbmammo.prepare embed          --root <EMBED root>       --out manifests/embed.jsonl
 python -m cbmammo.prepare embed_temporal --root <EMBED root>       --out manifests/embed_temporal.jsonl
 # the static-base configs also list cmmd / cdd_cesm / inbreast as monitoring test sets; build them the same way or edit the YAML
-python audit/label_density.py            # label yield of the pair manifest (Table 1)
+python audit/label_density.py            # label yield of the pair manifest (Table 2)
 
 # 2. frozen static bases: 2 arms x 3 seeds  ->  runs/{cb,opq}_embed_ft2_s{0,1,2}
 for s in 0 1 2; do
@@ -79,14 +79,16 @@ python audit/prior_shuffle_analysis.py prior_out cd_out results/tables/prior_shu
 
 | Manuscript table | File in `results/tables/` |
 |---|---|
-| 1, label yield | `label_yield.csv`, `label_yield_train_descriptors.csv` (transcribed from the output of `audit/label_density.py`) |
-| 2, concept differencing | `concept_diff_results.csv` |
-| 3, registration / difference-image baseline | `registration_baseline_results.csv` (all statistics, splits and descriptors), `registration_baseline_results_controls.csv` (different-patient prior and synthetic-lesion controls), `registration_baseline_results_primary.json` (statistic chosen from the synthetic-lesion control) |
-| 4, learned heads per split | `temporal_eval_final.csv` |
-| 5, prior-using minus current-only, CB minus opaque | `temporal_eval_final_paired.csv` |
-| 6, true / different-patient / identity prior | `prior_shuffle_final.csv` |
+| 2, label yield | `label_yield.csv`, `label_yield_train_descriptors.csv` (transcribed from the output of `audit/label_density.py`) |
+| 3, concept differencing | `concept_diff_results.csv` |
+| 4, registration / difference-image baseline | `registration_baseline_results.csv` (all statistics, splits and descriptors), `registration_baseline_results_controls.csv` (different-patient prior and synthetic-lesion controls), `registration_baseline_results_primary.json` (statistic chosen from the synthetic-lesion control) |
+| 5, learned heads per split (prior-using heads CB and OPQ, current-only controls CB-c and OPQ-c) | `temporal_eval_final.csv` |
+| 6, prior-using minus current-only, CB minus opaque | `temporal_eval_final_paired.csv` |
+| 7, true / different-patient / identity prior | `prior_shuffle_final.csv` |
 
 AUROCs are split-stratified averages (weights proportional to n_pos x n_neg) or per-split values; intervals are 95 % patient-cluster bootstrap intervals; paired differences share resamples.
+
+`temporal_eval_final.csv` and `temporal_eval_final_paired.csv` list five methods: `concept_diff (label-free)`, `CB learned (concept heads)`, `opaque learned`, and the current-only controls `CB current-only` and `opaque current-only` (three-seed ensembles). The two files were regenerated on 24 November 2026 from the stored scores with `audit/temporal_eval.py` as it is in this repository (B = 1000). The rows of the first three methods are identical to the previous version of the files; the rows of the two current-only controls and the paired differences that involve them are new. The table numbers above are those of the revised manuscript (Table 1 there is the related-work table).
 
 ## Tests and smoke test
 
@@ -102,7 +104,7 @@ The smoke test checks that the pipeline runs; its numbers mean nothing.
 
 ## Provenance notes
 
-* The audit scripts ran on a GPU server with absolute paths; the paths were made relative to the repository root afterwards and the files were syntax-checked, but the scripts were not re-executed end to end after that edit. The training code and configs are unchanged apart from `cache_dir`.
+* The audit scripts ran on a GPU server with absolute paths; the paths were made relative to the repository root afterwards and the files were syntax-checked, but the scripts were not re-executed end to end after that edit, with one exception: `audit/temporal_eval.py` was run unchanged on the stored scores when the current-only rows were added (see above). The training code and configs are unchanged apart from `cache_dir`.
 * `configs/cb_embed_ft2.yaml` and `opq_embed_ft2.yaml` were reconstructed from the saved `run.json` of the corresponding runs; seeds of one arm differ only in `seed` and the dataloader worker count.
 * `cbmammo/prepare/builders.py` is the file used for the runs with the builder for a private clinic dataset removed (not used here). The `cbmammo/` package is shared with the repository of the companion site-shift study (`bcaitu/cbmammo-site-shift`).
 * The original full-manifest runs (before the label-aware sampler) collapsed to constant predictions and are not part of the reported results; their configs are omitted.
